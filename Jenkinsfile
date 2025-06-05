@@ -11,10 +11,10 @@ pipeline {
 
     stages {
 
-        stage('Generar ejecutable Maven') {
-            steps {
-                bat 'mvn clean package -DskipTests'
-            }
+       stage('Generar ejecutable Maven') {
+             steps {
+              bat 'mvn clean package -DskipTests'
+             }
         }
 
         stage('Construir la imagen') {
